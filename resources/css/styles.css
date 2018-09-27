@@ -44,7 +44,7 @@ body {
 
 .headCard {
 
-    background-image: url('https://img00.deviantart.net/467e/i/2013/297/c/3/hd_nature_space_wallpaper_by_raver13371-d6rnhim.jpg');
+    background-image: url('https://wallpapercave.com/wp/MXM8xm7.jpg');
     background-size: 100% 100%;
 
 }
@@ -105,4 +105,19 @@ body {
     border-bottom: 1px solid rgba(0,0,0,0.1);
     margin-bottom: 3rem;
     padding-bottom: 1rem;
+}
+
+.h4, h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.navbar-brand {
+    font-weight: bolder;
+}
+.nav-link {
+    margin-left: 1rem;
+}
+.rgba-stylish-strong {
+    background-color: rgba(23, 11, 39, 0.68);
 }
