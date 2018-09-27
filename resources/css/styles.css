@@ -80,10 +80,14 @@ body {
 .eventCalendar {
     background-color: #dadada;
     padding: 4rem 2rem 1rem 2rem;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 .eventList {
     background-color:#ececec;
     padding: 4rem 2rem 1rem 2rem;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .h5, h5 {
