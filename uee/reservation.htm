@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <title> Shows </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./seat_plan_plugin/jquery.seat-charts.css">
+<!-- <script src="//code.jquery.com/jquery.min.js"></script> -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="./seat_plan_plugin/jquery.seat-charts.js"></script>
+    <style>
+        .jumbotron {
+            padding: 1rem;
+            border-radius: 0rem;
+        }
+        .jumbotron2 {
+            padding: 0.3rem;
+        }
+        .card {
+            margin-bottom: 0.5rem;
+        }
+
+        .economy-class{
+
+        }
+
+        @media (max-width:575px) {
+            .display-4 {
+                font-size: 1.5rem;
+            }
+            .day h5 {
+                background-color: #f8f9fa;
+                padding: 3px 5px 5px;
+                margin: -8px -8px 8px -8px;
+            }
+            .date {
+                padding-left: 4px;
+            }
+        }
+
+        @media (min-width: 576px) {
+            .day {
+                height: 6vw;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="mx-auto">
+        <h2>Shows</h2>
+    </div>
+    
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+        	<div class="p-3 border border-primary">
+        		<div class="table-responsive">
+        	<table>
+                <tr>
+                	<th>Make Reservation</th>
+                </tr>
+                	<tr>
+                		<td width="20%	" class="col-md-1"><label class="col-md-7" for="Date">Date</label></td>
+                		<td class="col-md-11"><input class="col-md-12 form-control" type="date"/></td>
+                	</tr>
+                	<tr>
+                		<td class="col-md-1"><label class="col-md-7"  for="Date">Shows</label></td>
+                		<td class="col-md-11">
+                		<select  class="col-md-12 form-control textfeilds" name="Show" id="Show">
+                		<option value="">The Birth of the Solar System</option>
+                		<option value="">Hubble Vision </option>
+                		<option value="">Dawn of the Space age</option>
+                		<option value="">Natural Selection</option>
+                		<option value="">Stars, The Powerhouse of the Universe</option>
+                		<option value="">Exploring the Universe, Probing the Heavens with Galileo</option>
+                		</select>
+                	</td>
+                	</tr>
+                	<tr>
+                		<td class="col-md-1"><label class="col-md-7"  for="Time">Time</label></td>
+                		<td class="col-md-11">
+                		<select  class="col-md-12 form-control textfeilds" name="Show" id="Show">
+                		<option value="">9.30 a.m.</option>
+                		<option value="">12.30 p.m.</option>
+                		<option value="">3.30 p.m.</option>
+                		</select>
+                	</td>
+                	</tr>
+                	<tr>
+                		<td class="col-md-1"><label class="col-md-7"  for="countAdults">No. of Adults</label></td>
+                		<td class="col-md-11"><input class="col-md-12 form-control textfeilds" type="number"></td>
+                	</tr>
+                	<tr>
+                		<td class="col-md-1"><label class="col-md-7"  for="countChildern">No. of Children</label></td>
+                		<td class="col-md-11"><input class="col-md-12 form-control textfeilds" type="number"></td>
+                	</tr>
+                	<tr>
+                		<td class="col-md-1"><label class="col-md-7"  for="totPrice">Total Price</label></td>
+                		<td class="col-md-11"><input class="col-md-12 form-control textfeilds" type="text"></td>
+                	</tr>
+                	<tr>
+                		<td class="col-md-1">
+                            <label class="m-3 col-md-5 btn btn-info btn-sm"   data-toggle="modal" data-target="#ticketPriceModal" class="">Ticket Prices</label>
+                        </td>
+                	</tr>
+                	<tr>
+						<td>
+							  <h5> Selected Seats (<span id="counter">0</span>):</h5>
+
+						</td>
+						<td>
+							  <ul id="selected-seats">
+  </ul>
+						</td>
+                	</tr>
+                	<tr>
+                		<td></td>
+                	<td>
+                		<button class="m-3 btn btn-primary btn-sm">Proceed</button>
+                		<button class="btn btn-danger btn-sm" >Cancel</button>
+                	</td>
+                	</tr>
+                </table>
+        </div>         
+        	</div>
+</div>
+<div class="col-md-offset-6 ">
+	<div class="p-3 border border-primary">
+
+		<div id="seat-map">
+		<h4>Seat Plan</h4>
+<!--   <div class="front-indicator">Front</div>
+ -->  <div class="booking-details">
+
+  
+</div>
+</div>
+
+<div id="legendmy">
+	<div align="center">
+	<table>
+		<tr>
+			<td><div class="seatCharts-seat seatCharts-cell economy-class unavailable"></div>Unavilable</td>
+			<td><div class="seatCharts-seat seatCharts-cell economy-class available"></div>Available</td>
+		</tr>
+	</table>	
+	</div>
+</div>	
+	</div>
+
+</div>
+
+<!-- ticket prices model-->
+<div class="modal fade" id="ticketPriceModal" tabindex="-1" role="dialog" aria-labelledby="ticketPriceModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Ticket Prices</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                          <div class="table-responsive">
+                          	<table class="table table-striped">
+                             	<thead>
+                             		<tr>
+                             			<td></td>
+                             			<td><12y.o.</td>
+                             			<td>>12y.o</td>
+                             		</tr>
+                             	</thead>
+                             	<tbody>
+                             		<tr>
+                             			<td>Weekdays</td>
+                             			<td>Rs:30.00</td>
+                             			<td>Rs:50.00</td>
+                             		</tr>
+                             		<tr>
+                             			<td>Saturdays</td>
+                             			<td>Rs:50.00</td>
+                             			<td>Rs:100.00</td>
+                             		</tr>
+                             	</tbody>
+                             </table>
+                          </div>
+                             
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-dark" data-dismiss="modal">OK</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- ticket prices model-->
+
+           
+
+
+        <div class="col-lg-9">
+            
+           
+
+            
+           
+        </div>
+    </div>
+    </div>
+    <footer class="page-footer font-small blue">
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">Sri Lanka Planetarium 
+      <a href="http://www.planetarium.gov.lk">www.planetarium.gov.lk</a> � 2018 Copyright:
+        <a href="https://github.com/SYNYD/UEE">  TEAM SyNyD</a>
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+</div>
+</body>
+<script>
+	var firstSeatLabel = 1;
+
+  $(document).ready(function() {
+    var $cart = $('#selected-seats'),
+      $counter = $('#counter'),
+      $total = $('#total'),
+      sc = $('#seat-map').seatCharts({
+      map: [
+        'e_eeeeeeeeee_e',
+        'ee_eeeeeeee_ee',
+        'eee_eeeeee_eee',
+        'eeee_eeee_eeee',
+        'eeeee____eeeee',
+        'eeeee____eeeee',
+        'eeee_eeee_eeee',
+        'eee_eeeeee_eee',
+        'ee_eeeeeeee_ee',
+		'e_eeeeeeeeee_e',
+		      ],
+      seats: {
+        e: {
+          price   : 40,
+          classes : 'economy-class', //your custom CSS class
+          category: 'Economy Class'
+        }         
+      
+      },
+      naming : {
+        top : false,
+        getLabel : function (character, row, column) {
+          return firstSeatLabel++;
+        },
+      },
+      legend : {
+        node : $('#legend'),
+          items : [
+          [ 'e', 'available',   'Economy Class'],
+          [ 'f', 'unavailable', 'Already Booked']
+          ]         
+      },
+      click: function () {
+        if (this.status() == 'available') {
+          //let's create a new <li> which we'll add to the cart items
+        //  $('<li>'+this.data().category+' Seat # '+this.settings.label+': <b>$'+this.data().price+'</b> <a href="#" class="cancel-cart-item">[cancel]</a></li>')
+          $('<li> Seat # '+this.settings.label+' <a href="#" class="cancel-cart-item">[cancel]</a></li>')
+            .attr('id', 'cart-item-'+this.settings.id)
+            .data('seatId', this.settings.id)
+            .appendTo($cart);
+          
+          /*
+           * Lets up<a href="https://www.jqueryscript.net/time-clock/">date</a> the counter and total
+           *
+           * .find function will not find the current seat, because it will change its stauts only after return
+           * 'selected'. This is why we have to add 1 to the length and the current seat price to the total.
+           */
+          $counter.text(sc.find('selected').length+1);
+          $total.text(recalculateTotal(sc)+this.data().price);
+          
+          return 'selected';
+        } else if (this.status() == 'selected') {
+          //update the counter
+          $counter.text(sc.find('selected').length-1);
+          //and total
+          $total.text(recalculateTotal(sc)-this.data().price);
+        
+          //remove the item from our cart
+          $('#cart-item-'+this.settings.id).remove();
+        
+          //seat has been vacated
+          return 'available';
+        } else if (this.status() == 'unavailable') {
+          //seat has been already booked
+          return 'unavailable';
+        } else {
+          return this.style();
+        }
+      }
+    });
+
+    //this will handle "[cancel]" link clicks
+    $('#selected-seats').on('click', '.cancel-cart-item', function () {
+      //let's just trigger Click event on the appropriate seat, so we don't have to repeat the logic here
+      sc.get($(this).parents('li:first').data('seatId')).click();
+    });
+
+    //let's pretend some seats have already been booked
+    sc.get(['1_2', '4_1', '7_1', '7_2']).status('unavailable');
+
+});
+
+function recalculateTotal(sc) {
+  var total = 0;
+
+  //basically find every selected seat and sum its price
+  sc.find('selected').each(function () {
+    total += this.data().price;
+  });
+  
+  return total;
+}
+</script>
+</html>
