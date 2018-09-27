@@ -28,3 +28,12 @@
         height: 6vw;
     }
 }
+
+.shadow {
+
+    box-shadow: none !important;
+
+}
+.nav-arrows a ,.nav-dots span {
+    background-color: #cacaca ;
+}
