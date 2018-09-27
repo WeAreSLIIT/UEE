@@ -37,3 +37,72 @@
 .nav-arrows a ,.nav-dots span {
     background-color: #cacaca ;
 }
+
+body {
+    background-color: #1b191e;
+}
+
+.headCard {
+
+    background-image: url('https://img00.deviantart.net/467e/i/2013/297/c/3/hd_nature_space_wallpaper_by_raver13371-d6rnhim.jpg');
+    background-size: 100% 100%;
+
+}
+
+.card {
+    margin: 0.5rem;
+    background-size: 100% auto;
+}
+.card {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0;
+    border-radius: 0;
+
+}
+.card .card-body .card-text {
+
+    color: #fff;
+    font-size: .7rem;
+
+}
+
+.card-body {
+    background-color: rgba(0,0,0,0.7);
+    color: #fff;
+}
+
+.eventCalendar {
+    background-color: #dadada;
+    padding: 4rem 2rem 1rem 2rem;
+}
+.eventList {
+    background-color:#ececec;
+    padding: 4rem 2rem 1rem 2rem;
+}
+
+.h5, h5 {
+
+    font-size: 1rem;
+
+}
+
+.mainrow {
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+
+.mb-5, .my-5 {
+
+    margin-bottom: 0rem !important;
+
+}
+
+.h2, h2 {
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+}
