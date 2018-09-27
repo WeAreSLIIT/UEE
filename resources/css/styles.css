@@ -45,13 +45,14 @@ body {
 .headCard {
 
     background-image: url('https://wallpapercave.com/wp/MXM8xm7.jpg');
-    background-size: 100% 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
 
 }
+
 
 .card {
     margin: 0.5rem;
@@ -124,4 +125,16 @@ body {
 }
 .rgba-stylish-strong {
     background-color: rgba(23, 11, 39, 0.68);
+}
+@media (max-width: 1120px) {
+    .headCard {
+        
+        background-size: auto 100%;
+    }
+}
+@media (min-width: 1120px) {
+    .headCard {
+        
+        background-size:  100% auto;
+    }
 }
