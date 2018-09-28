@@ -1,0 +1,40 @@
+{
+    "eventList" :
+        [
+            {
+                "title"         : "Solar System",
+                "description"   : "The Solar System is the gravitationally bound system of the Sun and the objects that orbit it....",
+                "image"         : "http://www.stanfords.co.uk/content/images/thumbs/015/0156134_Sample_171859_solarsystem_pic.jpeg",
+                "url"           : "#",
+                "button"        : "View Event"
+            },
+            {
+                "title"         : "International Space Station",
+                "description"   : "The International Space Station (ISS) is a space station, or a habitable artificial satellite, in low Earth orbit. ...",
+                "image"         : "https://www.rd.com/wp-content/uploads/2017/10/00_Space_The-Surprising-Way-Your-Genes-Can-Change-in-Space-According-to-NASA_562691425-Vadim-Sadovski-760x506.jpg",
+                "url"           : "#",
+                "button"        : "View Event"
+            },
+            {
+                "title"         : "NASA",
+                "description"   : "The National Aeronautics and Space Administration is an independent agency of the United States Federal Government responsible for the civilian space program...",
+                "image"         : "https://ethereumworldnews.com/wp-content/uploads/2018/04/NASA-Ethereum.jpg",
+                "url"           : "#",
+                "button"        : "View Event"
+            },
+            {
+                "title"         : "Comets",
+                "description"   : "Comets are cosmic snowballs of frozen gases, rock and dust that orbit the Sun. When frozen, they are the size of a small town.....",
+                "image"         : "http://www.kinyu-z.net/data/wallpapers/25/789223.jpg",
+                "url"           : "#",
+                "button"        : "View Event"
+            },
+            {
+                "title"         : "Solar Eclipse",
+                "description"   : "An eclipse is an astronomical event that occurs when an astronomical object is temporarily obscured, either by passing into the shadow of another body.....",
+                "image"         : "http://www.coollibrarian.com/wp-content/uploads/the-2017-solar-eclipse-is-ing-eclipse-wallpaper.jpg",
+                "url"           : "#",
+                "button"        : "View Event"
+            }
+        ]
+}

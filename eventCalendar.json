@@ -1,0 +1,35 @@
+{
+    "days" : [
+        {
+            "date" : 10,
+            "events" : [
+                {
+                    "title"     : "Event 1",
+                    "color"     : "success",
+                    "category" : "outdoor",
+                    "time"      : "night",
+                    "seats"     : 50
+                },
+                {
+                    "title"     : "Event 12",
+                    "color"     : "success",
+                    "category" : "outdoor",
+                    "time"      : "night",
+                    "seats"     : 40
+                }
+            ]
+        },
+        {
+            "date" :20,
+            "events" : [
+                {
+                    "title"     : "Event 4",
+                    "color"     : "success",
+                    "category" : "show",
+                    "time"      : "day",
+                    "seats"     : 50
+                }
+            ]
+        }
+    ]
+}
