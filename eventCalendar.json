@@ -4,16 +4,35 @@
             "date" : 10,
             "events" : [
                 {
-                    "title"     : "Event 1",
+                    "title"     : "Outdoor Event",
                     "color"     : "success",
-                    "category" : "outdoor",
+                    "category"  : "outdoor",
                     "time"      : "night",
                     "seats"     : 50
                 },
                 {
-                    "title"     : "Event 12",
+                    "title"     : "Outdoor Sky View",
                     "color"     : "success",
-                    "category" : "outdoor",
+                    "category"  : "outdoor",
+                    "time"      : "night",
+                    "seats"     : 40
+                }
+            ]
+        },
+        {
+            "date" : 12,
+            "events" : [
+                {
+                    "title"     : "Star Maps",
+                    "color"     : "danger",
+                    "category"  : "lecture",
+                    "time"      : "night",
+                    "seats"     : 50
+                },
+                {
+                    "title"     : "Explore Sky",
+                    "color"     : "danger",
+                    "category"  : "lecture",
                     "time"      : "night",
                     "seats"     : 40
                 }
@@ -23,9 +42,9 @@
             "date" :20,
             "events" : [
                 {
-                    "title"     : "Event 4",
-                    "color"     : "success",
-                    "category" : "show",
+                    "title"     : "Solar Eclipse",
+                    "color"     : "primary",
+                    "category"  : "show",
                     "time"      : "day",
                     "seats"     : 50
                 }

@@ -47,28 +47,28 @@
                                     <a class="nav-link" href="#">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Articles</a>
+                                    <a class="nav-link" href="iCreateArticle.html">Articles</a>
                                 </li>
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="#">Calendar
+                                    <a class="nav-link" href="iCalendar.html">Calendar
                                         <span class="sr-only">(current)</span>
                                      </a>
                                 </li>
                                 <li class="nav-item">
-                                        <a class="nav-link" href="#">Booking</a>
+                                        <a class="nav-link" href="iBooking.html">Booking</a>
                                     </li>
                                 <li class="nav-item">
-                                        <a class="nav-link" href="#">Courses</a>
+                                        <a class="nav-link" href="iGallery.html">Gallery</a>
                                 </li>
         
     
                                
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gallery</a>
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</a>
                                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#">Space</a>
-                                        <a class="dropdown-item" href="#">Planetarium</a>
-                                        <a class="dropdown-item" href="#">NASA</a>
+                                        <a class="dropdown-item" href="iCourseRegistration.html">Course Registration</a>
+                                        <a class="dropdown-item" href="iCourseList.html">Course List</a>
+                                        <a class="dropdown-item" href="iPayment.html">Course Payment</a>
                                     </div>
                                 </li>
     
@@ -357,7 +357,6 @@
                         </footer>
                         <!-- Footer -->
                 </footer>
-
             </div>
         </Main>
     
@@ -409,6 +408,22 @@
                     $(".timeday").attr("style", "display: none !important");
                     $(".timenight").attr("style", "display: block !important");
             });
+            
+            $("#category").change(()=>{
+                    let value = $("#category").val()
+                    if(value == 1 ) {
+                        $(".catshow").attr("style", "display: block !important");
+                        $(".catoutdoor , .catlecture").attr("style", "display: none !important");
+                    } else if(value == 2 ) {
+                        $(".catoutdoor").attr("style", "display: block !important");
+                        $(".catshow , .catlecture").attr("style", "display: none !important");
+                    } else if(value == 3 ) {
+                        $(".catlecture").attr("style", "display: block !important");
+                        $(".catoutdoor , .catshow").attr("style", "display: none !important");
+                    } else {
+                        $(".catoutdoor , .catlecture ,.catshow ").attr("style", "display: block !important");
+                    } 
+            });
 
             $("#eventSearch").keyup(()=>{
                 let searchKeyWord = $('#eventSearch').val();
@@ -439,7 +454,7 @@
                         <div class="card-body">
                             <h5 class="card-title"> <b>${value.title}</b></h5>
                             <p class="card-text">${value.description}</p>
-                            <a href="${value.url}" class="btn btn-sm btn-info">${value.button}</a>
+                            <a href="${value.url}" class="btn btn-sm btn-info" onClick="alert('Redirecting to ${value.title}.....')">${value.button}</a>
                         </div>
                     </div>
                     `;
@@ -483,7 +498,7 @@
                                     `;
                     if(MonthDays[i]===value.date){
                         $.each(value.events, (k,v)=>{
-                            calendarDays += `<a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-${v.color} text-white ${"cat" + v.category+" time" +v.time}" title="${v.title}">${v.title}</a>`;
+                            calendarDays += `<a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-${v.color} text-white ${"cat" + v.category+" time" +v.time}" title="${v.title}" onClick="alert('Redirecting to ${v.title}.....')">${v.title}</a>`;
                         });
                         i_backup = i+1;
                         i=70+i;
