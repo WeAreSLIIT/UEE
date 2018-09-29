@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> PLANETARIUM.GOV.LK </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS Files Imports Here -->
+    <link rel="stylesheet" href="vendors/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/font-awesome/5.3.1/css/font-awesome.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/css/mdb.min.css" rel="stylesheet">
+
+
+    <!-- Website CSS Style File -->
+    <link type="text/css" rel="stylesheet" href="resources/css/styles.css">
+</head>
+
+<body>
+
+
+    <Main>
+        <div class="container">
+            <header>
+                <!--Navbar-->
+                <nav class="navbar navbar-expand-lg navbar-light purple-gradient">
+
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand" href="#">PLANETARIUM</a>
+
+                    <!-- Collapse button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Collapsible content -->
+                    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+
+                        <!-- Links -->
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="iHome.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="iCreateArticle.html">Articles</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="iCalendar.html">Calendar
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="iGallery.html">Gallery</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">Reservations</a>
+                                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="iReservation.html">Seat Reservation</a>
+                                    <a class="dropdown-item" href="iShows.html">Shows List</a>
+                                    <a class="dropdown-item" href="iReservationPayment.html">Reservation Payments</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">Courses</a>
+                                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="iCourseRegistration.html">Course Registration</a>
+                                    <a class="dropdown-item" href="iCourseList.html">Course List</a>
+                                    <a class="dropdown-item" href="iPayment.html">Course Payment</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <!-- Links -->
+
+                        <form class="form-inline">
+                            <div class="md-form my-0">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Collapsible content -->
+
+                </nav>
+                <!--/.Navbar-->
+            </header>
+            <main>
+                <!--Jumbotron-->
+                <div class="row mb-5">
+                    <div class="col-md-12">
+                        <div class="card card-image headCard" style="margin:0">
+                            <div class="text-white text-center rgba-stylish-strong py-5 px-4">
+                                <div class="py-5">
+
+                                    <!--Content-->
+                                    <h2 class="card-title pt-3 mb-5 font-bold"><b>Sri Lanka Planetarium Event Calendar</b></h2>
+                                    <p class="px-5 pb-4">The Planetarium is one of those places in Colombo that's
+                                        stayed more or less the same since 1965,
+                                        give or take a bit of furniture revamping and their new website. The building
+                                        still looks fantastic,
+                                        the feeling you get when the lights dim is still exciting, most of the graphics</p>
+                                    <a class="btn purple-gradient"><i class="fa fa-book left"></i> Seat Plan</a>
+                                    <!--Content-->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Jumbotron-->
+                <div class="row mainrow">
+                    <div class="col-md-4 eventList">
+                        <h2>EVENTS LIST</h2>
+
+                        <div class="md-form input-group">
+                            <input type="search" class="form-control added-padding-3" placeholder="Search for..." id="eventSearch">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary btn-sm aqua-gradient my-0" type="button" id="eventSearchButton">Go!</button>
+                            </span>
+                        </div>
+
+
+                        <!-- Card Light -->
+
+                        <div id="eventList">
+                        </div>
+
+                        <ul class="pagination justify-content-center pagination-sm ">
+                            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-8 eventCalendar">
+                        <h2>EVENT CALENDAR</h2>
+
+                        <h4>Filter Events</h4>
+                        <form>
+                            <div class="row">
+                                <div class="col-md">
+                                    <div class="form-group">
+                                        <label for="category">Category</label>
+                                        <select class="custom-select" id="category">
+                                            <option selected>All Events</option>
+                                            <option value="1">Shows</option>
+                                            <option value="2">Outdoor Events</option>
+                                            <option value="3">Lectures</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="form-group">
+                                        <label for="eventtime">Event Time </label>
+                                        <br>
+                                        <div class="btn-group btn-group-toggle " data-toggle="buttons" id="eventtime">
+                                            <label class="btn btn-secondary  active">
+                                                <input type="radio" name="options" id="option1" autocomplete="off"
+                                                    checked>Any
+                                            </label>
+                                            <label class="btn btn-secondary">
+                                                <input type="radio" name="options" id="option2" autocomplete="off"
+                                                    value="day"> Day
+                                            </label>
+                                            <label class="btn btn-secondary">
+                                                <input type="radio" name="options" id="option3" autocomplete="off"
+                                                    value="night"> Night
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="form-group">
+                                        <label for="customRange">Available Seats Count</label>
+                                        <input type="range" class="custom-range" id="customRange" name="points1">
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="form-group">
+                                <label for="customRange">Event not available ?</label>
+                                <button type="button" class="btn btn-primary btn-block">Request New Event</button>
+                            </div>
+                        </form>
+                        <br />
+                        <br />
+
+                        <div class="container-fluid">
+                            <header>
+                                <h2>
+                                    <a href="#"><i class="fa fa-angle-double-left"></i></a>
+                                    November 2018
+                                    <a href="#"><i class="fa fa-angle-double-right"></i></a>
+                                </h2>
+
+                                <div class="row d-none d-sm-flex p-1 bg-dark text-white">
+                                    <h5 class="col-sm p-1 text-center">Sunday</h5>
+                                    <h5 class="col-sm p-1 text-center">Monday</h5>
+                                    <h5 class="col-sm p-1 text-center">Tuesday</h5>
+                                    <h5 class="col-sm p-1 text-center">Wednesday</h5>
+                                    <h5 class="col-sm p-1 text-center">Thursday</h5>
+                                    <h5 class="col-sm p-1 text-center">Friday</h5>
+                                    <h5 class="col-sm p-1 text-center">Saturday</h5>
+                                </div>
+                            </header>
+
+                            <div class="row border border-right-0 border-bottom-0" id="eventdays">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <!-- Footer -->
+                <footer class="page-footer font-small unique-color-dark">
+
+                    <div style="background-color: #6351ce;">
+                        <div class="container">
+
+                            <!-- Grid row-->
+                            <div class="row py-4 d-flex align-items-center purple-gradient">
+
+                                <!-- Grid column -->
+                                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                                    <h6 class="mb-0">Get connected with us on social networks!</h6>
+                                </div>
+                                <!-- Grid column -->
+
+                                <!-- Grid column -->
+                                <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                                    <!-- Facebook -->
+                                    <a class="fb-ic">
+                                        <i class="fa fa-facebook white-text mr-4"> </i>
+                                    </a>
+                                    <!-- Twitter -->
+                                    <a class="tw-ic">
+                                        <i class="fa fa-twitter white-text mr-4"> </i>
+                                    </a>
+                                    <!-- Google +-->
+                                    <a class="gplus-ic">
+                                        <i class="fa fa-google-plus white-text mr-4"> </i>
+                                    </a>
+                                    <!--Linkedin -->
+                                    <a class="li-ic">
+                                        <i class="fa fa-linkedin white-text mr-4"> </i>
+                                    </a>
+                                    <!--Instagram-->
+                                    <a class="ins-ic">
+                                        <i class="fa fa-instagram white-text"> </i>
+                                    </a>
+
+                                </div>
+                                <!-- Grid column -->
+
+                            </div>
+                            <!-- Grid row-->
+
+                        </div>
+                    </div>
+
+                    <!-- Footer Links -->
+                    <div class="container text-center text-md-left mt-5">
+
+                        <!-- Grid row -->
+                        <div class="row mt-3">
+
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                                <!-- Content -->
+                                <h6 class="text-uppercase font-weight-bold">PLANETARIUM.GOV.LK</h6>
+                                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                                <p>The Planetarium is one of those places in Colombo that's stayed more or less the
+                                    same since 1965, </p>
+
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                                <!-- Links -->
+                                <h6 class="text-uppercase font-weight-bold">Site Navigation</h6>
+                                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                                <p>
+                                    <a href="#!">Home Page</a>
+                                </p>
+                                <p>
+                                    <a href="#!">Course Registraction</a>
+                                </p>
+                                <p>
+                                    <a href="#!">Event Calendar</a>
+                                </p>
+                                <p>
+                                    <a href="#!">Image Gallery</a>
+                                </p>
+
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                                <!-- Links -->
+                                <h6 class="text-uppercase font-weight-bold">Latest Article</h6>
+                                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                                <p>
+                                    <a href="#!">Annual Solar Eclipse</a>
+                                </p>
+                                <p>
+                                    <a href="#!">Intersteller Adventure</a>
+                                </p>
+                                <p>
+                                    <a href="#!">Modification Space Station</a>
+                                </p>
+                                <p>
+                                    <a href="#!">Upcoming Comets</a>
+                                </p>
+
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                                <!-- Links -->
+                                <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                                <p>
+                                    <i class="fa fa-home mr-3"></i> Sri Lanka Planetarium, Colombo</p>
+                                <p>
+                                    <i class="fa fa-envelope mr-3"></i> info@planetarium.gov.lk</p>
+                                <p>
+                                    <i class="fa fa-phone mr-3"></i> + 77 99 55 111</p>
+                                <p>
+                                    <i class="fa fa-print mr-3"></i> + 71 892 9600</p>
+
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+
+                    </div>
+                    <!-- Footer Links -->
+
+                    <!-- Copyright -->
+                    <div class="footer-copyright text-center py-3">Sri Lanka Planetarium
+                        <a href="http://www.planetarium.gov.lk">www.planetarium.gov.lk</a> © 2018 Copyright:
+                        <a href="https://github.com/SYNYD/UEE"> TEAM SyNyD</a>
+                    </div>
+                    <!-- Copyright -->
+
+                </footer>
+                <!-- Footer -->
+            </footer>
+        </div>
+    </Main>
+
+    <!-- Java Script Files Imports Here -->
+    <!-- <script src="vendors/jquery/3.3.1/jquery.min.js"></script>
+        <script src="vendors/popper.js/1.14.4/umd/popper.min.js"></script>
+        <script src="vendors/bootstrap/4.1.3/js/bootstrap.min.js"></script> -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/js/mdb.min.js"></script>
+    <script>
+
+
+        let eventsList = [];
+        let eventDays = [];
+        $(document).ready(function () {
+            $.getJSON('eventList.json', (data) => {
+                eventsList = data.eventList;
+                console.log(eventsList);
+                generateEventList(eventsList);
+
+            });
+
+            $.getJSON('eventCalendar.json', (data) => {
+                eventDays = data.days;
+                console.log(eventDays);
+                generateCalendarDays(eventDays);
+            });
+        });
+
+        $("#option1").change(() => {
+            console.log("any");
+            $(".timeday").attr("style", "display: block !important");
+            $(".timenight").attr("style", "display: block !important");
+        });
+        $("#option2").change(() => {
+            console.log("day");
+            $(".timeday").attr("style", "display: block !important");
+            $(".timenight").attr("style", "display: none !important");
+        });
+        $("#option3").change(() => {
+            console.log("night");
+            $(".timeday").attr("style", "display: none !important");
+            $(".timenight").attr("style", "display: block !important");
+        });
+
+        $("#category").change(() => {
+            let value = $("#category").val()
+            if (value == 1) {
+                $(".catshow").attr("style", "display: block !important");
+                $(".catoutdoor , .catlecture").attr("style", "display: none !important");
+            } else if (value == 2) {
+                $(".catoutdoor").attr("style", "display: block !important");
+                $(".catshow , .catlecture").attr("style", "display: none !important");
+            } else if (value == 3) {
+                $(".catlecture").attr("style", "display: block !important");
+                $(".catoutdoor , .catshow").attr("style", "display: none !important");
+            } else {
+                $(".catoutdoor , .catlecture ,.catshow ").attr("style", "display: block !important");
+            }
+        });
+
+        $("#eventSearch").keyup(() => {
+            let searchKeyWord = $('#eventSearch').val();
+            let newEventList = [];
+            newEventList = eventsList.filter(e => {
+                return e.title.includes(searchKeyWord)
+            });
+            generateEventList(newEventList);
+        });
+
+        $('#eventSearchButton').click(() => {
+            let searchKeyWord = $('#eventSearch').val();
+            let newEventList = [];
+            newEventList = eventsList.filter(e => {
+                return e.title.includes(searchKeyWord)
+            });
+            generateEventList(newEventList);
+
+        });
+
+        generateEventList = (e) => {
+
+            let eventElements = '';
+            $.each(e, (key, value) => {
+                eventElements += `
+
+                    <div class="card" style="background-image: url(${value.image});">
+                        <div class="card-body">
+                            <h5 class="card-title"> <b>${value.title}</b></h5>
+                            <p class="card-text">${value.description}</p>
+                            <a href="${value.url}" class="btn btn-sm btn-info" onClick="alert('Redirecting to ${value.title}.....')">${value.button}</a>
+                        </div>
+                    </div>
+                    `;
+            });
+
+            $("#eventList").empty().append(eventElements);
+        }
+
+        function* weekDay() {
+            let weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saterday'];
+            let i = 0;
+            while (true) {
+                yield weekdays[(i++) % 7];
+            }
+        };
+
+        generateCalendarDays = (eventDays) => {
+
+
+            let calendarDays = '';
+            let MonthDays = [29, 30, 31, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+            let wd = weekDay();
+            let thismonth = false;
+
+
+            let i = 0;
+            let i_backup = 0;
+
+            $.each(eventDays, (key, value) => {
+                i = i_backup;
+                while (i < MonthDays.length) {
+                    thismonth = (!thismonth && MonthDays[i] === 1) ? true : (thismonth && MonthDays[i] === 1) ? false : thismonth;
+
+                    calendarDays += `
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ${(!thismonth) ? "d-none d-sm-inline-block bg-light text-muted" : ""}">
+                                    <h5 class="row align-items-center">
+                                        <span class="date col-1">${MonthDays[i]}</span>
+                                        <small class="col d-sm-none text-center text-muted">${wd.next().value}</small>
+                                        <span class="col-1"></span>
+                                    </h5>
+                                    `;
+                    if (MonthDays[i] === value.date) {
+                        $.each(value.events, (k, v) => {
+                            calendarDays += `<a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-${v.color} text-white ${"cat" + v.category + " time" + v.time}" title="${v.title}" onClick="alert('Redirecting to ${v.title}.....')">${v.title}</a>`;
+                        });
+                        i_backup = i + 1;
+                        i = 70 + i;
+
+                    }
+
+                    calendarDays += `</div>`;
+
+                    if (i % 7 == 6) calendarDays += `<div class="w-100"></div>`;
+
+                    i++;
+                }
+
+            });
+            i = i_backup;
+            while (i < MonthDays.length) {
+                thismonth = (!thismonth && MonthDays[i] === 1) ? true : (thismonth && MonthDays[i] === 1) ? false : thismonth;
+
+                calendarDays += `
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ${(!thismonth) ? "d-none d-sm-inline-block bg-light text-muted" : ""}">
+                                    <h5 class="row align-items-center">
+                                        <span class="date col-1">${MonthDays[i]}</span>
+                                        <small class="col d-sm-none text-center text-muted">${wd.next().value}</small>
+                                        <span class="col-1"></span>
+                                    </h5>
+                                    `;
+
+                calendarDays += `</div>`;
+
+                if (i % 7 == 6) calendarDays += `<div class="w-100"></div>`;
+
+                i++;
+            }
+
+            // $.each(MonthDays,(k,v)=>{
+
+            //     thismonth = (!thismonth && v===1 )? true : (thismonth && v===1 )? false : thismonth ; 
+
+            //     calendarDays += `
+            //                     <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ${(!thismonth)?"d-none d-sm-inline-block bg-light text-muted" : "" }">
+            //                         <h5 class="row align-items-center">
+            //                         <span class="date col-1">${v}</span>
+            //                         <small class="col d-sm-none text-center text-muted">${wd.next().value}</small>
+            //                         <span class="col-1"></span>
+            //                         </h5>
+            //                         `;
+
+            //     // if(v===eventDays[i].date){
+            //     //     console.log(typeof(eventDays));
+            //     //     let events = eventDays[i].events;
+            //     //     $.each(events,(key,value)=>{
+            //     //         calendarDays += `<a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-${value.color} text-white" title="${value.title}">${value.title}</a>`;
+            //     //     });
+
+            //     // }
+            //     // else {
+            //     //         calendarDays += `<p class="d-sm-none">No events </p>`
+            //     // }
+
+
+
+            //             calendarDays += `</div>`;
+
+            //     if(k%7==6) calendarDays += `<div class="w-100"></div>`;
+
+            // });
+
+
+            $("#eventdays").empty().append(calendarDays);
+        };
+
+    </script>
+</body>
+
+</html>
