@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> PLANETARIUM.GOV.LK </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS Files Imports Here -->
+  <link rel="stylesheet" href="vendors/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendors/font-awesome/5.3.1/css/font-awesome.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/css/mdb.min.css" rel="stylesheet">
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/js/mdb.min.js"></script>
+
+  <link rel="stylesheet" href="vendors/seat_plan_plugin/jquery.seat-charts.css">
+  <!-- <script src="//code.jquery.com/jquery.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="vendors/seat_plan_plugin/jquery.seat-charts.js"></script>
+  <!-- Website CSS Style File -->
+  <link type="text/css" rel="stylesheet" href="resources/css/styles.css">
+</head>
+
+<body>
+
+
+  <Main>
+    <div class="container">
+      <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light purple-gradient">
+
+          <!-- Navbar brand -->
+          <a class="navbar-brand" href="#">PLANETARIUM</a>
+
+          <!-- Collapse button -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Collapsible content -->
+          <div class="collapse navbar-collapse" id="basicExampleNav">
+
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="iHome.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="iCreateArticle.html">Articles</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="iCalendar.html">Calendar
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="iGallery.html">Gallery</a>
+              </li>
+
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">Reservations</a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="iReservation.html">Seat Reservation</a>
+                  <a class="dropdown-item" href="iShows.html">Shows List</a>
+                  <a class="dropdown-item" href="iReservationPayment.html">Reservation Payments</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">Courses</a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="iCourseRegistration.html">Course Registration</a>
+                  <a class="dropdown-item" href="iCourseList.html">Course List</a>
+                  <a class="dropdown-item" href="iPayment.html">Course Payment</a>
+                </div>
+              </li>
+
+            </ul>
+            <!-- Links -->
+
+            <form class="form-inline">
+              <div class="md-form my-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+              </div>
+            </form>
+          </div>
+          <!-- Collapsible content -->
+
+        </nav>
+        <!--/.Navbar-->
+      </header>
+      <main>
+        <!--Jumbotron-->
+        <div class="row mb-5">
+          <div class="col-md-12">
+            <div class="card card-image headCard" style="margin:0">
+              <div class="text-white text-center rgba-stylish-strong py-5 px-4">
+                <div class="py-5">
+
+                  <!--Content-->
+                  <h2 class="card-title pt-3 mb-5 font-bold"><b>Article About Universe</b></h2>
+                  <p class="px-5 pb-4">The Planetarium is one of those places in Colombo that's
+                    stayed more or less the same since 1965,
+                    give or take a bit of furniture revamping and their new website. The building
+                    still looks fantastic,
+                    the feeling you get when the lights dim is still exciting, most of the graphics</p>
+                  <a class="btn purple-gradient"><i class="fa fa-book left"></i> Seat Plan</a>
+                  <!--Content-->
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Jumbotron-->
+        <div class="row mainrow">
+          <div class="col-md-6 eventList">
+            <div class="p-3 border border-primary">
+              <div class="table-responsive">
+                <table>
+                  <tr>
+                    <th>Make Reservation</th>
+                  </tr>
+                  <tr>
+                    <td width="20%	" class="col-md-1"><label class="col-md-7" for="Date">Date</label></td>
+                    <td class="col-md-11"><input class="col-md-12 form-control" type="date" /></td>
+                  </tr>
+                  <tr>
+                    <td class="col-md-1"><label class="col-md-7" for="Date">Shows</label></td>
+                    <td class="col-md-11">
+                      <select class="col-md-12 form-control textfeilds" name="Show" id="Show">
+                        <option value="">The Birth of the Solar System</option>
+                        <option value="">Hubble Vision </option>
+                        <option value="">Dawn of the Space age</option>
+                        <option value="">Natural Selection</option>
+                        <option value="">Stars, The Powerhouse of the Universe</option>
+                        <option value="">Exploring the Universe, Probing the Heavens with Galileo</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="col-md-1"><label class="col-md-7" for="Time">Time</label></td>
+                    <td class="col-md-11">
+                      <select class="col-md-12 form-control textfeilds" name="Show" id="Show">
+                        <option value="">9.30 a.m.</option>
+                        <option value="">12.30 p.m.</option>
+                        <option value="">3.30 p.m.</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="col-md-1"><label class="col-md-7" for="countAdults">No. of Adults</label></td>
+                    <td class="col-md-11"><input class="col-md-12 form-control textfeilds" type="number"></td>
+                  </tr>
+                  <tr>
+                    <td class="col-md-1"><label class="col-md-7" for="countChildern">No. of Children</label></td>
+                    <td class="col-md-11"><input class="col-md-12 form-control textfeilds" type="number"></td>
+                  </tr>
+                  <tr>
+                    <td class="col-md-1"><label class="col-md-7" for="totPrice">Total Price</label></td>
+                    <td class="col-md-11"><input class="col-md-12 form-control textfeilds" type="text"></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="btn btn-info btn-sm" data-toggle="modal" data-target="#ticketPriceModal" class="">Ticket
+                        Prices</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5> Selected Seats (<span id="counter">0</span>):</h5>
+
+                    </td>
+                    <td>
+                      <ul id="selected-seats">
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>
+                      <button class="m-3 btn btn-primary btn-sm">Proceed</button>
+                      <button class="btn btn-danger btn-sm">Cancel</button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 eventCalendar">
+            <div class="p-3 border border-primary">
+
+              <div id="seat-map">
+                <h4>Seat Plan</h4>
+                <!--   <div class="front-indicator">Front</div>
+               -->
+                <div class="booking-details">
+
+
+                </div>
+              </div>
+
+              <div id="legendmy">
+                <div align="center">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="seatCharts-seat seatCharts-cell economy-class unavailable"></div>Unavilable
+                      </td>
+                      <td>
+                        <div class="seatCharts-seat seatCharts-cell economy-class available"></div>Available
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- ticket prices model-->
+          <div class="modal fade" id="ticketPriceModal" tabindex="-1" role="dialog" aria-labelledby="ticketPriceModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Ticket Prices</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="table-responsive">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <td></td>
+                          <td>
+                            <12y.o.</td> <td>>12y.o
+                          </td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Weekdays</td>
+                          <td>Rs:30.00</td>
+                          <td>Rs:50.00</td>
+                        </tr>
+                        <tr>
+                          <td>Saturdays</td>
+                          <td>Rs:50.00</td>
+                          <td>Rs:100.00</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-dark" data-dismiss="modal">OK</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ticket prices model-->
+          <div class="col-lg-9">
+
+
+
+
+
+          </div>
+        </div>
+      </main>
+      <footer>
+        <!-- Footer -->
+        <footer class="page-footer font-small unique-color-dark">
+
+          <div style="background-color: #6351ce;">
+            <div class="container">
+
+              <!-- Grid row-->
+              <div class="row py-4 d-flex align-items-center purple-gradient">
+
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                  <h6 class="mb-0">Get connected with us on social networks!</h6>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                  <!-- Facebook -->
+                  <a class="fb-ic">
+                    <i class="fa fa-facebook white-text mr-4"> </i>
+                  </a>
+                  <!-- Twitter -->
+                  <a class="tw-ic">
+                    <i class="fa fa-twitter white-text mr-4"> </i>
+                  </a>
+                  <!-- Google +-->
+                  <a class="gplus-ic">
+                    <i class="fa fa-google-plus white-text mr-4"> </i>
+                  </a>
+                  <!--Linkedin -->
+                  <a class="li-ic">
+                    <i class="fa fa-linkedin white-text mr-4"> </i>
+                  </a>
+                  <!--Instagram-->
+                  <a class="ins-ic">
+                    <i class="fa fa-instagram white-text"> </i>
+                  </a>
+
+                </div>
+                <!-- Grid column -->
+
+              </div>
+              <!-- Grid row-->
+
+            </div>
+          </div>
+
+          <!-- Footer Links -->
+          <div class="container text-center text-md-left mt-5">
+
+            <!-- Grid row -->
+            <div class="row mt-3">
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                <!-- Content -->
+                <h6 class="text-uppercase font-weight-bold">PLANETARIUM.GOV.LK</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>The Planetarium is one of those places in Colombo that's stayed more or less the same since
+                  1965, </p>
+
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">Site Navigation</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                  <a href="#!">Home Page</a>
+                </p>
+                <p>
+                  <a href="#!">Course Registraction</a>
+                </p>
+                <p>
+                  <a href="#!">Event Calendar</a>
+                </p>
+                <p>
+                  <a href="#!">Image Gallery</a>
+                </p>
+
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">Latest Article</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                  <a href="#!">Annual Solar Eclipse</a>
+                </p>
+                <p>
+                  <a href="#!">Intersteller Adventure</a>
+                </p>
+                <p>
+                  <a href="#!">Modification Space Station</a>
+                </p>
+                <p>
+                  <a href="#!">Upcoming Comets</a>
+                </p>
+
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                  <i class="fa fa-home mr-3"></i> Sri Lanka Planetarium, Colombo</p>
+                <p>
+                  <i class="fa fa-envelope mr-3"></i> info@planetarium.gov.lk</p>
+                <p>
+                  <i class="fa fa-phone mr-3"></i> + 77 99 55 111</p>
+                <p>
+                  <i class="fa fa-print mr-3"></i> + 71 892 9600</p>
+
+              </div>
+              <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+          </div>
+          <!-- Footer Links -->
+
+          <!-- Copyright -->
+          <div class="footer-copyright text-center py-3">Sri Lanka Planetarium
+            <a href="http://www.planetarium.gov.lk">www.planetarium.gov.lk</a> © 2018 Copyright:
+            <a href="https://github.com/SYNYD/UEE"> TEAM SyNyD</a>
+          </div>
+          <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+      </footer>
+
+    </div>
+  </Main>
+
+  <!-- Java Script Files Imports Here -->
+  <!-- <script src="vendors/jquery/3.3.1/jquery.min.js"></script>
+        <script src="vendors/popper.js/1.14.4/umd/popper.min.js"></script>
+        <script src="vendors/bootstrap/4.1.3/js/bootstrap.min.js"></script> -->
+
+  <script>
+    var firstSeatLabel = 1;
+
+    $(document).ready(function () {
+      var $cart = $('#selected-seats'),
+        $counter = $('#counter'),
+        $total = $('#total'),
+        sc = $('#seat-map').seatCharts({
+          map: [
+            'e_eeeeeeeeee_e',
+            'ee_eeeeeeee_ee',
+            'eee_eeeeee_eee',
+            'eeee_eeee_eeee',
+            'eeeee____eeeee',
+            'eeeee____eeeee',
+            'eeee_eeee_eeee',
+            'eee_eeeeee_eee',
+            'ee_eeeeeeee_ee',
+            'e_eeeeeeeeee_e',
+          ],
+          seats: {
+            e: {
+              price: 40,
+              classes: 'economy-class', //your custom CSS class
+              category: 'Economy Class'
+            }
+
+          },
+          naming: {
+            top: false,
+            getLabel: function (character, row, column) {
+              return firstSeatLabel++;
+            },
+          },
+          legend: {
+            node: $('#legend'),
+            items: [
+              ['e', 'available', 'Economy Class'],
+              ['f', 'unavailable', 'Already Booked']
+            ]
+          },
+          click: function () {
+            if (this.status() == 'available') {
+              //let's create a new <li> which we'll add to the cart items
+              //  $('<li>'+this.data().category+' Seat # '+this.settings.label+': <b>$'+this.data().price+'</b> <a href="#" class="cancel-cart-item">[cancel]</a></li>')
+              $('<li> Seat # ' + this.settings.label + ' <a href="#" class="cancel-cart-item">[cancel]</a></li>')
+                .attr('id', 'cart-item-' + this.settings.id)
+                .data('seatId', this.settings.id)
+                .appendTo($cart);
+
+              /*
+               * Lets up<a href="https://www.jqueryscript.net/time-clock/">date</a> the counter and total
+               *
+               * .find function will not find the current seat, because it will change its stauts only after return
+               * 'selected'. This is why we have to add 1 to the length and the current seat price to the total.
+               */
+              $counter.text(sc.find('selected').length + 1);
+              $total.text(recalculateTotal(sc) + this.data().price);
+
+              return 'selected';
+            } else if (this.status() == 'selected') {
+              //update the counter
+              $counter.text(sc.find('selected').length - 1);
+              //and total
+              $total.text(recalculateTotal(sc) - this.data().price);
+
+              //remove the item from our cart
+              $('#cart-item-' + this.settings.id).remove();
+
+              //seat has been vacated
+              return 'available';
+            } else if (this.status() == 'unavailable') {
+              //seat has been already booked
+              return 'unavailable';
+            } else {
+              return this.style();
+            }
+          }
+        });
+
+      //this will handle "[cancel]" link clicks
+      $('#selected-seats').on('click', '.cancel-cart-item', function () {
+        //let's just trigger Click event on the appropriate seat, so we don't have to repeat the logic here
+        sc.get($(this).parents('li:first').data('seatId')).click();
+      });
+
+      //let's pretend some seats have already been booked
+      sc.get(['1_2', '4_1', '7_1', '7_2']).status('unavailable');
+
+    });
+
+    function recalculateTotal(sc) {
+      var total = 0;
+
+      //basically find every selected seat and sum its price
+      sc.find('selected').each(function () {
+        total += this.data().price;
+      });
+
+      return total;
+    }
+  </script>
+</body>
+
+</html>
