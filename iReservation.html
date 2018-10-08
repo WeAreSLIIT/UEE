@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="vendors/font-awesome/5.3.1/css/font-awesome.min.css">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
   <!-- Bootstrap core CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
@@ -32,6 +32,9 @@
   <script src="vendors/seat_plan_plugin/jquery.seat-charts.js"></script>
   <!-- Website CSS Style File -->
   <link type="text/css" rel="stylesheet" href="resources/css/styles.css">
+      <link href="resources/date-picker/dist/css/jquery.datetimepicker.css" rel="stylesheet">
+    <link href="resources/date-picker/dist/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <script src="resources/date-picker/dist/js/jquery.datetimepicker.full.js"></script>
 </head>
 
 <body>
@@ -70,7 +73,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="iCategories.html">Gallery</a>
+                <a class="nav-link" href="iGallery.html">Gallery</a>
               </li>
 
               <li class="nav-item dropdown active">
@@ -133,33 +136,34 @@
         <!--Jumbotron-->
         <div class="row mainrow">
           <div class="col-md-6 eventList">
-            <div class="p-3 border border-primary">
+            <div class="p-1 border border-primary">
               <div class="table-responsive">
-                <table>
+                <table class="col-md-12">
                   <tr>
                     <th>Make Reservation</th>
                   </tr>
-                  <tr>
-                    <td width="20%	" class="col-md-1"><label class="col-md-7" for="Date">Date</label></td>
-                    <td class="col-md-11"><input class="col-md-12 form-control" type="date" /></td>
+                  <tr class="col-md-12">
+                    <td class="col-md-6"><label for="Date">Date</label></td>
+                    <td class="col-md-6"><input class="form-control textfeilds" type="text" id="some_class" /></td>
                   </tr>
-                  <tr>
-                    <td class="col-md-1"><label class="col-md-7" for="Date">Shows</label></td>
-                    <td class="col-md-11">
-                      <select class="col-md-12 form-control textfeilds" name="Show" id="Show">
+				  <tr>
+                    <td class="col-md-6"><label for="Date">Shows</label></td>
+                    <td class="col-md-6">
+                      <select class="form-control" name="Show" id="Show">
                         <option value="">The Birth of the Solar System</option>
                         <option value="">Hubble Vision </option>
                         <option value="">Dawn of the Space age</option>
                         <option value="">Natural Selection</option>
                         <option value="">Stars, The Powerhouse of the Universe</option>
-                        <option value="">Exploring the Universe, Probing the Heavens with Galileo</option>
+                        <option value="">Exploring the Universe</option>
+                        <option value="">Probing the Heavens with Galileo</option>
                       </select>
                     </td>
                   </tr>
                   <tr>
-                    <td class="col-md-1"><label class="col-md-7" for="Time">Time</label></td>
-                    <td class="col-md-11">
-                      <select class="col-md-12 form-control textfeilds" name="Show" id="Show">
+                    <td class="col-md-6"><label for="Time">Time</label></td>
+                    <td class="col-md-6">
+                      <select class="form-control textfeilds" name="Show" id="Show">
                         <option value="">9.30 a.m.</option>
                         <option value="">12.30 p.m.</option>
                         <option value="">3.30 p.m.</option>
@@ -167,22 +171,22 @@
                     </td>
                   </tr>
                   <tr>
-                    <td class="col-md-1"><label class="col-md-7" for="countAdults">No. of Adults</label></td>
-                    <td class="col-md-11"><input class="col-md-12 form-control textfeilds" type="number"></td>
+                    <td class="col-md-6"><label for="countAdults">No. of Adults</label></td>
+                    <td class="col-md-6"><input class="form-control textfeilds" type="number"></td>
                   </tr>
                   <tr>
-                    <td class="col-md-1"><label class="col-md-7" for="countChildern">No. of Children</label></td>
-                    <td class="col-md-11"><input class="col-md-12 form-control textfeilds" type="number"></td>
+                    <td class="col-md-6"><label for="countChildern">No. of Children</label></td>
+                    <td class="col-md-6"><input class="form-control textfeilds" type="number"></td>
                   </tr>
                   <tr>
-                    <td class="col-md-1"><label class="col-md-7" for="totPrice">Total Price</label></td>
-                    <td class="col-md-11"><input class="col-md-12 form-control textfeilds" type="text"></td>
+                    <td class="col-md-6"><label  for="totPrice">Total Price</label></td>
+                    <td class="col-md-6"><input class="form-control textfeilds" type="text"></td>
                   </tr>
                   <tr>
-                    <td>
+                  <td>
                       <label class="btn btn-info btn-sm" data-toggle="modal" data-target="#ticketPriceModal" class="">Ticket
                         Prices</label>
-                    </td>
+                  </td>
                   </tr>
                   <tr>
                     <td>
@@ -197,8 +201,12 @@
                   <tr>
                     <td></td>
                     <td>
-                      <button class="m-3 btn btn-primary btn-sm">Proceed</button>
+                    <a href="iReservationPayment.html">
+                    	<button class="m-1 btn btn-primary btn-sm" onclick="store();">Proceed</button>
+                    </a>
+                    <a href="iShows.html">
                       <button class="btn btn-danger btn-sm">Cancel</button>
+                    </a>
                     </td>
                   </tr>
                 </table>
@@ -206,7 +214,7 @@
             </div>
           </div>
           <div class="col-md-6 eventCalendar">
-            <div class="p-3 border border-primary">
+            <div class="p-1 border border-primary">
 
               <div id="seat-map">
                 <h4>Seat Plan</h4>
@@ -443,10 +451,25 @@
   <!-- <script src="vendors/jquery/3.3.1/jquery.min.js"></script>
         <script src="vendors/popper.js/1.14.4/umd/popper.min.js"></script>
         <script src="vendors/bootstrap/4.1.3/js/bootstrap.min.js"></script> -->
-
+<script>
+    $.datetimepicker.setLocale('en');
+    var dtp_date = new Date();
+    var dtp_currentMonth = dtp_date.getMonth();
+    var dtp_currentDate = dtp_date.getDate();
+    var dtp_currentYear = dtp_date.getFullYear();
+    $('#some_class').datetimepicker({
+		format: 'Y-m-d',
+	timepicker: false,
+        minDate: new Date(dtp_currentYear, dtp_currentMonth, dtp_currentDate),
+        beforeShowDay: function(date) {
+        var day = date.getDay();
+        return [(day != 0), ''];
+    }
+    });
+</script>
   <script>
     var firstSeatLabel = 1;
-
+var seats = [];
     $(document).ready(function () {
       var $cart = $('#selected-seats'),
         $counter = $('#counter'),
@@ -493,7 +516,8 @@
                 .attr('id', 'cart-item-' + this.settings.id)
                 .data('seatId', this.settings.id)
                 .appendTo($cart);
-
+				seats.push(this.settings.label);
+				console.log(seats);
               /*
                * Lets up<a href="https://www.jqueryscript.net/time-clock/">date</a> the counter and total
                *
@@ -512,7 +536,8 @@
 
               //remove the item from our cart
               $('#cart-item-' + this.settings.id).remove();
-
+              seats.splice($.inArray(this.settings.label,seats),1);
+              console.log(seats);
               //seat has been vacated
               return 'available';
             } else if (this.status() == 'unavailable') {
@@ -544,6 +569,10 @@
       });
 
       return total;
+    }
+    
+    function store(){
+    localStorage.setItem("seats", seats);
     }
   </script>
 </body>

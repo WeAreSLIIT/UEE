@@ -17,13 +17,21 @@
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/css/mdb.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="vendors/elasticslide/css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="vendors/elasticslide/css/elastic_grid.min.css" />
-    <link type="text/css" rel="stylesheet" href="vendors/elasticslide/resources/css/styles.css">
-
 
     <!-- Website CSS Style File -->
     <link type="text/css" rel="stylesheet" href="resources/css/styles.css">
+    <style>
+             .bg-light {
+                background-color: #242424 !important;
+            }
+            .card-body {
+                 background-color: rgb(27, 27, 27);
+            }
+            .h2, h2 {
+                    color: #ae26ad;
+                    border-bottom: 1px solid rgba(75, 73, 73, 0.4);
+                }
+    </style>
 </head>
 
 <body>
@@ -33,7 +41,7 @@
         <div class="container">
             <header>
                 <!--Navbar-->
-                <nav class="navbar navbar-expand-lg navbar-light purple-gradient">
+                <nav class="navbar navbar-expand-lg navbar-light btn-sm purple-gradient">
 
                     <!-- Navbar brand -->
                     <a class="navbar-brand" href="#">PLANETARIUM</a>
@@ -50,10 +58,10 @@
 
                         <!-- Links -->
                         <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active ">
+                            <li class="nav-item active">
                                 <a class="nav-link" href="iHome.html">Home</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item ">
                                 <a class="nav-link" href="iCreateArticle.html">Articles</a>
                             </li>
                             <li class="nav-item ">
@@ -109,14 +117,13 @@
                                 <div class="py-5">
 
                                     <!--Content-->
-                                    <h2 class="card-title pt-3 mb-5 font-bold"><b>Sky Is The Ultimate Art Gallery Just
-                                            Above Us.</b></h2>
+                                    <h2 class="card-title pt-3 mb-5 font-bold"><b>Article About Universe</b></h2>
                                     <p class="px-5 pb-4">The Planetarium is one of those places in Colombo that's
                                         stayed more or less the same since 1965,
                                         give or take a bit of furniture revamping and their new website. The building
                                         still looks fantastic,
                                         the feeling you get when the lights dim is still exciting, most of the graphics</p>
-                                    <a class="btn purple-gradient"><i class="fa fa-book left"></i> Seat Plan</a>
+                                    <a class="btn btn-sm purple-gradient"><i class="fa fa-book left"></i> Seat Plan</a>
                                     <!--Content-->
 
                                 </div>
@@ -125,9 +132,120 @@
                     </div>
                 </div>
                 <!--Jumbotron-->
-                <div class="row eventCalendar ">
-                    <div id="elastic_grid_demo"></div>
+
+
+
+                <div class="album py-5 bg-light">
+                    <h2>LATEST ARTICLES</h2>
+                    <div class="container">
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm">
+                                    <img class="card-img-top" src="resources/images/4.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm purple-gradient waves-effect waves-light">View</button>
+                                                <button type="button" class="btn btn-sm purple-gradient waves-effect waves-light">Comment</button>
+                                            </div>
+                                            <small class="text-muted">9 mins</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm">
+                                    <img class="card-img-top" src="resources/images/5.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm purple-gradient waves-effect waves-light">View</button>
+                                                <button type="button" class="btn btn-sm purple-gradient waves-effect waves-light">Comment</button>
+                                            </div>
+                                            <small class="text-muted">9 mins</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm">
+                                    <img class="card-img-top" src="resources/images/3.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm purple-gradient waves-effect waves-light">View</button>
+                                                <button type="button" class="btn btn-sm purple-gradient waves-effect waves-light">Comment</button>
+                                            </div>
+                                            <small class="text-muted">9 mins</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h2>MOST VIEWED</h2>
+                        <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card mb-4 shadow-sm">
+                                        <img class="card-img-top" src="resources/images/2.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <p class="card-text">This is a wider card with supporting text below as a
+                                                natural lead-in to additional content. This content is a little bit longer.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-sm purple-gradient waves-effect waves-light">View</button>
+                                                    <button type="button" class="btn btn-sm purple-gradient waves-effect waves-light">Comment</button>
+                                                </div>
+                                                <small class="text-muted">9 mins</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-4 shadow-sm">
+                                        <img class="card-img-top" src="resources/images/4.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <p class="card-text">This is a wider card with supporting text below as a
+                                                natural lead-in to additional content. This content is a little bit longer.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-sm purple-gradient waves-effect waves-light">View</button>
+                                                    <button type="button" class="btn btn-sm purple-gradient waves-effect waves-light">Comment</button>
+                                                </div>
+                                                <small class="text-muted">9 mins</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-4 shadow-sm">
+                                        <img class="card-img-top" src="resources/images/5.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <p class="card-text">This is a wider card with supporting text below as a
+                                                natural lead-in to additional content. This content is a little bit longer.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-sm purple-gradient waves-effect waves-light">View</button>
+                                                    <button type="button" class="btn btn-sm purple-gradient waves-effect waves-light">Comment</button>
+                                                </div>
+                                                <small class="text-muted">9 mins</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
                 </div>
+
+
+
+
             </main>
             <footer>
                 <!-- Footer -->
@@ -137,7 +255,7 @@
                         <div class="container">
 
                             <!-- Grid row-->
-                            <div class="row py-4 d-flex align-items-center purple-gradient">
+                            <div class="row py-4 d-flex align-items-center btn-sm purple-gradient">
 
                                 <!-- Grid column -->
                                 <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
@@ -191,7 +309,8 @@
                                 <h6 class="text-uppercase font-weight-bold">PLANETARIUM.GOV.LK</h6>
                                 <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                                 <p>The Planetarium is one of those places in Colombo that's stayed more or less the
-                                    same since 1965, </p>
+                                    same since
+                                    1965, </p>
 
                             </div>
                             <!-- Grid column -->
@@ -291,231 +410,6 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/js/mdb.min.js"></script>
-
-    <script src="vendors/elasticslide/js/jquery.min.js"></script>
-    <script src="vendors/elasticslide/js/modernizr.custom.js"></script>
-    <script src="vendors/elasticslide/js/classie.js"></script>
-    <!--- uncompress-->
-
-    <script type="text/javascript" src="vendors/elasticslide/js/jquery.elastislide.js"></script>
-    <script type="text/javascript" src="vendors/elasticslide/js/jquery.hoverdir.js"></script>
-    <script type="text/javascript" src="vendors/elasticslide/js/elastic_grid.js"></script>
-
-    <!-- compress version
-<script type="text/javascript" src="js/elastic_grid.min.js"></script>
--->
-    <script type="text/javascript">
-        $(function () {
-            $("#elastic_grid_demo").elastic_grid({
-                'showAllText': 'All',
-                'filterEffect': 'popup', // moveup, scaleup, fallperspective, fly, flip, helix , popup
-                'hoverDirection': true,
-                'hoverDelay': 0,
-                'hoverInverse': false,
-                'expandingSpeed': 500,
-                'expandingHeight': 500,
-                'items':
-                    [
-                        {
-                            'title': 'Super Nova',
-                            'description': 'Our star was born from a dense region inside a stellar nursery, also known as a molecular cloud. As the gas and dust clumped together under gravity to spark the first nuclear reactions that would become our sun, the cloud spun increasingly faster around the protostar as the material collapsed',
-                            'thumbnail': ['resources/images/small/1.jpg', 'resources/images/small/2.jpg', 'resources/images/small/3.jpg', 'resources/images/small/10.jpg', 'resources/images/small/11.jpg'],
-                            'large': ['https://youtu.be/-6Xl9tBWt54', 'resources/images/large/2.jpg', 'resources/images/large/3.jpg', 'resources/images/large/10.jpg', 'resources/images/large/11.jpg'],
-                            'img_title': ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
-                            'button_list':
-                                [
-                                    { 'title': 'Demo', 'url': 'http://porfolio.bonchen.net/', 'new_window': true },
-                                    { 'title': 'Download', 'url': 'http://porfolio.bonchen.net/', 'new_window': false }
-                                ],
-                            'tags': ['Self Habbel Photos']
-                        },
-                        {
-                            'title': 'Black Holes',
-                            'description': 'Our star was born from a dense region inside a stellar nursery, also known as a molecular cloud. As the gas and dust clumped together under gravity to spark the first nuclear reactions that would become our sun, the cloud spun increasingly faster around the protostar as the material collapsed',
-                            'thumbnail': ['resources/images/small/4.jpg', 'resources/images/small/5.jpg', 'resources/images/small/6.jpg', 'resources/images/small/7.jpg'],
-                            'large': ['resources/images/large/4.jpg', 'resources/images/large/5.jpg', 'resources/images/large/6.jpg', 'resources/images/large/7.jpg'],
-                            'img_title': ['jquery elastic grid 6 ', 'jquery elastic grid 7 ', 'jquery elastic grid 8', 'jquery elastic grid 9', 'jquery elastic grid 9'],
-                            'button_list':
-                                [
-                                    { 'title': 'Demo', 'url': 'http://porfolio.bonchen.net/', 'new_window': true },
-                                    { 'title': 'Download', 'url': 'http://porfolio.bonchen.net/', 'new_window': true }
-                                ],
-                            'tags': ['Universe']
-                        },
-                        {
-                            'title': 'White Dwarf',
-                            'description': 'Our star was born from a dense region inside a stellar nursery, also known as a molecular cloud. As the gas and dust clumped together under gravity to spark the first nuclear reactions that would become our sun, the cloud spun increasingly faster around the protostar as the material collapsed',
-                            'thumbnail': ['resources/images/small/15.jpg', 'resources/images/small/8.jpg', 'resources/images/small/9.jpg', 'resources/images/small/10.jpg'],
-                            'large': ['resources/images/large/15.jpg', 'resources/images/large/8.jpg', 'resources/images/large/9.jpg', 'resources/images/large/10.jpg'],
-                            'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-                            'button_list':
-                                [
-                                    { 'title': 'Demo', 'url': 'http://porfolio.bonchen.net/', 'new_window': true },
-                                    { 'title': 'Download', 'url': 'http://porfolio.bonchen.net/', 'new_window': true }
-                                ],
-                            'tags': ['Self Habbel Photos', 'Universe']
-                        },
-                        {
-                            'title': 'Red Giants',
-                            'description': 'Our star was born from a dense region inside a stellar nursery, also known as a molecular cloud. As the gas and dust clumped together under gravity to spark the first nuclear reactions that would become our sun, the cloud spun increasingly faster around the protostar as the material collapsed',
-                            'thumbnail': ['resources/images/small/12.jpg', 'resources/images/small/13.jpg', 'resources/images/small/14.jpg', 'resources/images/small/15.jpg', 'resources/images/small/16.jpg'],
-                            'large': ['resources/images/large/12.jpg', 'resources/images/large/13.jpg', 'resources/images/large/14.jpg', 'resources/images/large/15.jpg', 'resources/images/large/16.jpg'],
-                            'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-                            'button_list':
-                                [
-                                    { 'title': 'Demo', 'url': 'http://porfolio.bonchen.net/', 'new_window': true },
-                                    { 'title': 'Download', 'url': 'http://porfolio.bonchen.net/', 'new_window': true }
-                                ],
-                            'tags': ['Habbel Photos']
-                        },
-                        {
-                            'title': 'Sola System',
-                            'description': 'Our star was born from a dense region inside a stellar nursery, also known as a molecular cloud. As the gas and dust clumped together under gravity to spark the first nuclear reactions that would become our sun, the cloud spun increasingly faster around the protostar as the material collapsed',
-                            'thumbnail': ['resources/images/small/17.jpg', 'resources/images/small/18.jpg', 'resources/images/small/19.jpg', 'resources/images/small/20.jpg'],
-                            'large': ['resources/images/large/17.jpg', 'resources/images/large/18.jpg', 'resources/images/large/19.jpg', 'resources/images/large/20.jpg'],
-                            'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-                            'button_list':
-                                [
-                                    { 'title': 'Demo', 'url': 'http://porfolio.bonchen.net/', 'new_window': true },
-                                    { 'title': 'Download', 'url': 'http://porfolio.bonchen.net/', 'new_window': true }
-                                ],
-                            'tags': ['Universe']
-                        },
-                        {
-                            'title': 'Spinach winter purslane',
-                            'description': 'Our star was born from a dense region inside a stellar nursery, also known as a molecular cloud. As the gas and dust clumped together under gravity to spark the first nuclear reactions that would become our sun, the cloud spun increasingly faster around the protostar as the material collapsed',
-                            'thumbnail': ['resources/images/small/13.jpg', 'resources/images/small/15.jpg', 'resources/images/small/11.jpg', 'resources/images/small/10.jpg'],
-                            'large': ['resources/images/large/13.jpg', 'resources/images/large/15.jpg', 'resources/images/large/11.jpg', 'resources/images/large/10.jpg'],
-                            'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-                            'button_list':
-                                [
-                                    { 'title': 'Demo', 'url': 'http://porfolio.bonchen.net/', 'new_window': true },
-                                    { 'title': 'Download', 'url': 'http://porfolio.bonchen.net/', 'new_window': true }
-                                ],
-                            'tags': ['Galaxy']
-                        },
-                        {
-                            'title': 'Spinach winter purslane',
-                            'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-                            'thumbnail': ['resources/images/small/7.jpg', 'resources/images/small/8.jpg', 'resources/images/small/9.jpg', 'resources/images/small/10.jpg'],
-                            'large': ['resources/images/large/7.jpg', 'resources/images/large/8.jpg', 'resources/images/large/9.jpg', 'resources/images/large/10.jpg'],
-                            'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-                            'button_list':
-                                [
-                                    { 'title': 'Demo', 'url': 'http://porfolio.bonchen.net/', 'new_window': true },
-                                    { 'title': 'Download', 'url': 'http://porfolio.bonchen.net/', 'new_window': true }
-                                ],
-                            'tags': ['Habbel Photos']
-                        },
-                        {
-                            'title': 'Azuki bean',
-                            'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-                            'thumbnail': ['resources/images/small/16.jpg', 'resources/images/small/13.jpg', 'resources/images/small/14.jpg', 'resources/images/small/15.jpg', 'resources/images/small/16.jpg'],
-                            'large': ['resources/images/large/16.jpg', 'resources/images/large/13.jpg', 'resources/images/large/14.jpg', 'resources/images/large/15.jpg', 'resources/images/large/16.jpg'],
-                            'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-                            'button_list':
-                                [
-                                    { 'title': 'Demo', 'url': 'http://porfolio.bonchen.net/', 'new_window': true },
-                                    { 'title': 'Download', 'url': 'http://porfolio.bonchen.net/', 'new_window': true }
-                                ],
-                            'tags': ['Galaxy']
-                        },
-                        {
-                            'title': 'Swiss chard pumpkin',
-                            'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-                            'thumbnail': ['resources/images/small/18.jpg', 'resources/images/small/18.jpg', 'resources/images/small/19.jpg', 'resources/images/small/20.jpg'],
-                            'large': ['resources/images/large/18.jpg', 'resources/images/large/18.jpg', 'resources/images/large/19.jpg', 'resources/images/large/20.jpg'],
-                            'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-                            'button_list':
-                                [
-                                    { 'title': 'Demo', 'url': 'http://porfolio.bonchen.net/', 'new_window': true },
-                                    { 'title': 'Download', 'url': 'http://porfolio.bonchen.net/', 'new_window': true }
-                                ],
-                            'tags': ['Universe', 'Space']
-                        },
-                        {
-                            'title': 'Winter purslane',
-                            'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-                            'thumbnail': ['resources/images/small/11.jpg', 'resources/images/small/15.jpg', 'resources/images/small/11.jpg', 'resources/images/small/10.jpg'],
-                            'large': ['resources/images/large/11.jpg', 'resources/images/large/15.jpg', 'resources/images/large/11.jpg', 'resources/images/large/10.jpg'],
-                            'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-                            'button_list':
-                                [
-                                    { 'title': 'Demo', 'url': 'http://porfolio.bonchen.net/', 'new_window': true },
-                                    { 'title': 'Download', 'url': 'http://porfolio.bonchen.net/', 'new_window': true }
-                                ],
-                            'tags': ['Habbel Photos']
-                        },
-                        {
-                            'title': 'Spinach winter purslane',
-                            'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-                            'thumbnail': ['resources/images/small/3.jpg', 'resources/images/small/15.jpg', 'resources/images/small/11.jpg', 'resources/images/small/10.jpg'],
-                            'large': ['resources/images/large/3.jpg', 'resources/images/large/15.jpg', 'resources/images/large/11.jpg', 'resources/images/large/10.jpg'],
-                            'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-                            'button_list':
-                                [
-                                    { 'title': 'Demo', 'url': 'http://porfolio.bonchen.net/', 'new_window': true },
-                                    { 'title': 'Download', 'url': 'http://porfolio.bonchen.net/', 'new_window': true }
-                                ],
-                            'tags': ['Galaxy']
-                        },
-                        {
-                            'title': 'Spinach winter purslane',
-                            'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-                            'thumbnail': ['resources/images/small/5.jpg', 'resources/images/small/8.jpg', 'resources/images/small/9.jpg', 'resources/images/small/10.jpg'],
-                            'large': ['resources/images/large/5.jpg', 'resources/images/large/8.jpg', 'resources/images/large/9.jpg', 'resources/images/large/10.jpg'],
-                            'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-                            'button_list':
-                                [
-                                    { 'title': 'Demo', 'url': 'http://porfolio.bonchen.net/', 'new_window': true },
-                                    { 'title': 'Download', 'url': 'http://porfolio.bonchen.net/', 'new_window': true }
-                                ],
-                            'tags': ['Habbel Photos', 'Universe']
-                        },
-                        {
-                            'title': 'Azuki bean',
-                            'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-                            'thumbnail': ['resources/images/small/6.jpg', 'resources/images/small/13.jpg', 'resources/images/small/14.jpg', 'resources/images/small/15.jpg', 'resources/images/small/16.jpg'],
-                            'large': ['resources/images/large/6.jpg', 'resources/images/large/13.jpg', 'resources/images/large/14.jpg', 'resources/images/large/15.jpg', 'resources/images/large/16.jpg'],
-                            'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-                            'button_list':
-                                [
-                                    { 'title': 'Demo', 'url': 'http://porfolio.bonchen.net/', 'new_window': true },
-                                    { 'title': 'Download', 'url': 'http://porfolio.bonchen.net/', 'new_window': true }
-                                ],
-                            'tags': ['Galaxy']
-                        },
-                        {
-                            'title': 'Swiss chard pumpkin',
-                            'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-                            'thumbnail': ['resources/images/small/8.jpg', 'resources/images/small/18.jpg', 'resources/images/small/19.jpg', 'resources/images/small/20.jpg'],
-                            'large': ['resources/images/large/8.jpg', 'resources/images/large/18.jpg', 'resources/images/large/19.jpg', 'resources/images/large/20.jpg'],
-                            'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-                            'button_list':
-                                [
-                                    { 'title': 'Demo', 'url': 'http://porfolio.bonchen.net/', 'new_window': true },
-                                    { 'title': 'Download', 'url': 'http://porfolio.bonchen.net/', 'new_window': true }
-                                ],
-                            'tags': ['Universe']
-                        },
-                        {
-                            'title': 'Spinach winter purslane',
-                            'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-                            'thumbnail': ['resources/images/small/9.jpg', 'resources/images/small/15.jpg', 'resources/images/small/11.jpg', 'resources/images/small/10.jpg'],
-                            'large': ['resources/images/large/9.jpg', 'resources/images/large/15.jpg', 'resources/images/large/11.jpg', 'resources/images/large/10.jpg'],
-                            'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-                            'button_list':
-                                [
-                                    { 'title': 'Demo', 'url': 'http://porfolio.bonchen.net/', 'new_window': true },
-                                    { 'title': 'Download', 'url': 'http://porfolio.bonchen.net/', 'new_window': true }
-                                ],
-                            'tags': ['Galaxy', 'Universe']
-                        }
-
-                    ]
-            });
-        });
-    </script>
 </body>
 
 </html>
